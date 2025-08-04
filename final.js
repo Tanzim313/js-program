@@ -33,11 +33,12 @@ for(i=1;i<=lastDay;i++){
 }
 
 /** Problem 04 - (Delete / Store) */
-var fileName= "pdfData.jpg";
+var fileName= "pdfData.pdf";
 //write your code here
 
 var x = fileName.split('.');
-var z = x[x.length-1];
+var z = x[1];
+
 var y = fileName.slice(0,1);
 
 if(z=="pdf"||z=="docx"||y=="#"){
@@ -62,5 +63,4 @@ var currentSalary = startingSalary;
 for(i=1;i<=experience;i++){
     currentSalary+=currentSalary*0.05;
 }
-
 console.log(currentSalary.toFixed(2));
