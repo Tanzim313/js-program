@@ -1,8 +1,8 @@
 function  bestTeam( player1, player2 ) {
           // You have to write your code here
 
-          var totalplayer1 = player1.foul + player1.cardY + player1.cardR;
-          var totalplayer2 = player2.foul + player2.cardY + player2.cardR;
+          let totalplayer1 = player1.foul + player1.cardY + player1.cardR;
+          let totalplayer2 = player2.foul + player2.cardY + player2.cardR;
 
           if(typeof player1 != 'object'|| typeof player2 != 'object'){
             return "Invalid";

@@ -5,7 +5,7 @@ function  resultReport( marks ) {
             return "Invalid";
           }
         else{
-            var pass = 0,fail = 0,total =0 ,average = 0;
+            let pass = 0,fail = 0,total =0 ,average = 0;
 
             for(i=0;i<marks.length;i++){
                 
@@ -20,14 +20,16 @@ function  resultReport( marks ) {
                 }
             }
 
-            return{
+        let result = {
                 finalScore: average,
                 pass : pass,
                 fail : fail
             };
+
+            return result;
         }
 
 }
 
-console.log(resultReport([10,12,13,80]));
+console.log(resultReport(100));
 

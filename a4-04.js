@@ -2,7 +2,7 @@ function  isSame(arr1 , arr2 ) {
           // You have to write your code here
 
           if(arr1.length == arr2.length){
-            var c=0;
+            let c=0;
             for(i=0;i<arr1.length;i++){
                 if(arr1[i]!== arr2[i]){
                     c++;
@@ -15,11 +15,12 @@ function  isSame(arr1 , arr2 ) {
                 return false;
             }
           }
-          else if(typeof arr1 != 'array' || typeof arr2 != 'array'){
-              return false;
+          else if(!Array.isArray(arr1) || !Array.isArray(arr2)){
+              return "Invalid";
           }
+        return false;
 }
 
-res = isSame([1,2, 3,], [1 , 2 , 3]);
+res = isSame([1, null , 3] , [1,null ,3]);
 console.log(res);
 

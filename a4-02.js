@@ -10,5 +10,5 @@ function  onlyCharacter( str ) {
         }
 }
 
-console.log(onlyCharacter(true));
+console.log(onlyCharacter(" ha ck m e 1 @ru.c  n  "));
 

@@ -1,7 +1,7 @@
 function totalFine( fare ) {
           // You have to write your code here
           if(fare>0 && typeof fare == 'number'){
-             fine = fare + fare *(0.2)+30;
+            let fine = fare + fare *(0.2)+30;
             return fine;
           }
           else{
@@ -9,6 +9,6 @@ function totalFine( fare ) {
           }
 }
 
-res = totalFine("552");
+res = totalFine("Gorib tai ticket katinai");
 console.log(res);
 
